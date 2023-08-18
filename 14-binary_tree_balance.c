@@ -32,7 +32,7 @@ int checkLeft(const binary_tree_t *tree)
  *
  * Return: returns balance factor i.e left - right;
  */
-binary_tree_balance(const binary_tree_t *tree)
+int binary_tree_balance(const binary_tree_t *tree)
 {
         int righttree, lefttree;
 

@@ -45,15 +45,17 @@ int  mybtrheight(const binary_tree_t *tree)
 
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
+	if (tree == NULL)
+        {
+                return (0);
+        }
+	
         int lheight = mybtheight(tree);
         int rheight = mybtrheight(tree);
         int lsize = checksize(tree->left);
         int rsize = checksize(tree->right);
 	
-	if (tree == NULL)
-        {
-                return (0);
-        }
+	
         if (lsize != rsize || lheight != rheight)
         {
                 return (0);
